@@ -6,6 +6,7 @@ public class Car {
     int minSpeed;
     double weight;
     boolean isTheCarOn;
+    char condition;
 
     public void public static void main(String[] args) {
         
