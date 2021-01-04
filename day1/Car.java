@@ -16,10 +16,19 @@ public class Car {
         System.out.println("The condition is: " + condition);
     }
 
+    public void wreckCar(){
+        condition = 'C';
+
+    }
+
     public static void main(String[] args) {
         Car familyCar = new Car();
+        System.out.println("Family's Car:");
         familyCar.printVariables();
         Car aliceCar = familyCar;
+        familyCar.wreckCar();
+        System.out.println("Alice's Car:");
+        aliceCar.printVariables();
 
 
     }
