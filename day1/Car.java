@@ -7,6 +7,7 @@ public class Car {
     double weight = 4079;
     boolean isTheCarOn = false;
     char condition = 'A';
+    String nameOfCar = "BMW";
 
     public void printVariables(){
         System.out.println("The max speed is: " + maxSpeed);
@@ -14,6 +15,7 @@ public class Car {
         System.out.println("The weight is: " + weight);
         System.out.println("Is the car on?: " + isTheCarOn);
         System.out.println("The condition is: " + condition);
+        System.out.println("Car name is: " + nameOfCar);
     }
 
     public void wreckCar(){
