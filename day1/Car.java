@@ -16,7 +16,7 @@ public class Car {
         System.out.println(condition);
     }
 
-    public void public static void main(String[] args) {
+    public static void main(String[] args) {
         Car carry = new Car();
         carry.printVariables();
 
