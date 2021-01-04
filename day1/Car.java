@@ -9,11 +9,11 @@ public class Car {
     char condition = 'A';
 
     public void printVariables(){
-        System.out.println(maxSpeed);
-        System.out.println(minSpeed);
-        System.out.println(weight);
-        System.out.println(isTheCarOn);
-        System.out.println(condition);
+        System.out.println("The max speed is: " + maxSpeed);
+        System.out.println("The min speed is: " + minSpeed);
+        System.out.println("The weight is: " + weight);
+        System.out.println("Is the car on?: " + isTheCarOn);
+        System.out.println("The condition is: " + condition);
     }
 
     public static void main(String[] args) {
