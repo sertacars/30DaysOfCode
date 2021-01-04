@@ -18,9 +18,9 @@ public class Solution {
         double doubleNumber = scan.nextDouble();
         String name = scan.next();
 
-        System.out.println(number);
-        System.out.println(doubleNumber);
-        System.out.println(name);
+        System.out.println(i + number);
+        System.out.println(d + doubleNumber);
+        System.out.println(s + name);
 
         /* Print the sum of both integer variables on a new line. */
 
