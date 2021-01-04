@@ -17,8 +17,9 @@ public class Car {
     }
 
     public static void main(String[] args) {
-        Car carry = new Car();
-        carry.printVariables();
+        Car familyCar = new Car();
+        familyCar.printVariables();
+        Car aliceCar = familyCar;
 
 
     }
