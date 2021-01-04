@@ -16,7 +16,7 @@ public class Solution {
         Scanner scan = new Scanner(System.in);
         int number = scan.nextInt();
         double doubleNumber = scan.nextDouble();
-        String name = scan.next();
+        String name = scan.next() + scan.nextLine();
 
         System.out.println(i + number);
         System.out.println(d + doubleNumber);
