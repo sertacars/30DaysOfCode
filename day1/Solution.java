@@ -11,6 +11,10 @@ public class Solution {
         Scanner scan = new Scanner(System.in);
 
         /* Declare second integer, double, and String variables. */
+        int number = 5;
+        double doubleNumber = 2.5;
+        String name = "Sertac ";
+
 
         /* Read and save an integer, double, and String to your variables. */
         // Note: If you have trouble reading the entire String, please go back and
