@@ -17,7 +17,8 @@ public class Car {
     }
 
     public void public static void main(String[] args) {
-        
+        Car carry = new Car();
+        carry.printVariables();
 
 
     }
