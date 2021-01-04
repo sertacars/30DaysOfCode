@@ -8,6 +8,14 @@ public class Car {
     boolean isTheCarOn = false;
     char condition = 'A';
 
+    public void printVariables(){
+        System.out.println(maxSpeed);
+        System.out.println(minSpeed);
+        System.out.println(weight);
+        System.out.println(isTheCarOn);
+        System.out.println(condition);
+    }
+
     public void public static void main(String[] args) {
         
 
