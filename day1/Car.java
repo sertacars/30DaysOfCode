@@ -21,16 +21,17 @@ public class Car {
 
     }
 
+    public void upgradeMinSpeed() {
+        minSpeed = maxSpeed;
+        maxSpeed = maxSpeed + 1;
+    }
+
     public static void main(String[] args) {
         Car familyCar = new Car();
         System.out.println("Family's Car:");
         familyCar.printVariables();
-        Car aliceCar = familyCar;
-        familyCar.wreckCar();
-        System.out.println("Alice's Car:");
-        aliceCar.printVariables();
-
-
+        familyCar.upgradeMinSpeed();
+        familyCar.printVariables();
     }
     
 }
