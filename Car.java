@@ -40,6 +40,23 @@ public class Car {
         maxSpeed = maxSpeed + 1;
     }
 
+    public void getIn(){
+        // numberOfPeopleInCar = numberOfPeopleInCar + 1;
+        numberOfPeopleInCar++;
+    }
+
+    public void getOut(){
+        numberOfPeopleInCar--;
+    }
+
+    public double howManyMilesTillOutOfGas(){
+        return currentFuel * mpg;
+    }
+
+    public double maxMilesPerFillUp(){
+        return maxFuel * mpg;
+    }
+
     public static void main(String[] args) {
 
         System.out.println("Birthday car");
