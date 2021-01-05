@@ -8,7 +8,7 @@ public class Car {
 
     boolean isTheCarOn = false;
     char condition = 'A';
-    String nameOfCar = "BMW";
+    String nameOfCar = "Sertac";
 
     double maxFuel = 16;
     double currentFuel = 8;
@@ -42,7 +42,15 @@ public class Car {
 
     public static void main(String[] args) {
 
+        System.out.println("Birthday car");
+
         Car birthdayPresent = new Car(500, 5000.545, true);
+        birthdayPresent.printVariables();
+
+        System.out.println("Christmas car");
+
+        Car christmasPresent = new Car(550, 2000, false);
+        christmasPresent.printVariables();
 
     }
     
