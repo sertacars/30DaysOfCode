@@ -29,6 +29,7 @@ public class Car {
         System.out.println("Is the car on?: " + isTheCarOn);
         System.out.println("The condition is: " + condition);
         System.out.println("Car name is: " + nameOfCar);
+        System.out.println("Number of people in the car: " + numberOfPeopleInCar);
     }
 
     public void wreckCar(){
@@ -59,15 +60,25 @@ public class Car {
 
     public static void main(String[] args) {
 
-        System.out.println("Birthday car");
-
+        
         Car birthdayPresent = new Car(500, 5000.545, true);
+
+        System.out.println("Birthday car v1");
+        birthdayPresent.printVariables();
+        birthdayPresent.getIn();
+        birthdayPresent.getIn();
+        birthdayPresent.getIn();
+        System.out.println("Miles left:" + birthdayPresent.howManyMilesTillOutOfGas());
+        System.out.println("Max Miles:" + birthdayPresent.maxMilesPerFillUp());
+        System.out.println("Birthday car v2");
+        birthdayPresent.printVariables();
+        birthdayPresent.getOut();
+        System.out.println("Birthday car v3");
         birthdayPresent.printVariables();
 
-        System.out.println("Christmas car");
-
-        Car christmasPresent = new Car(550, 2000, false);
-        christmasPresent.printVariables();
+        //System.out.println("Christmas car");
+        //Car christmasPresent = new Car(550, 2000, false);
+        //christmasPresent.printVariables();
 
     }
     
