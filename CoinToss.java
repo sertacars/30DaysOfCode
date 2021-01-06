@@ -8,7 +8,12 @@ public class CoinToss {
         return toss;
     }
 
-    public static void public static void main(String[] args) {
-        
+    public static void main(String[] args) {
+        CoinToss game = new CoinToss();
+        System.out.println(game.tossACoin());
+        System.out.println(game.tossACoin());
+        System.out.println(game.tossACoin());
+        System.out.println(game.tossACoin());
+        System.out.println(game.tossACoin());
     }
 }
