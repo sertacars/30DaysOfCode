@@ -58,6 +58,14 @@ public class Car {
         return maxFuel * mpg;
     }
 
+    public void turnTheCarOn(){
+        if (isTheCarOn == false){
+        isTheCarOn  = true;
+        }
+    }
+
+
+
     public static void main(String[] args) {
 
         
