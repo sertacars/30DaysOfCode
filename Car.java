@@ -15,6 +15,11 @@ public class Car {
     double mpg = 26.4;
 
     int numberOfPeopleInCar = 1;
+    int maxNumberOfPeopleInCar = 6;
+
+    public Car() {
+        
+    }
 
     public Car(int customMaxSpeed, double customWeight, boolean customIsTheCarOn){
         maxSpeed = customMaxSpeed;
@@ -43,11 +48,23 @@ public class Car {
 
     public void getIn(){
         // numberOfPeopleInCar = numberOfPeopleInCar + 1;
-        numberOfPeopleInCar++;
+        // numberOfPeopleInCar++;
+        if (numberOfPeopleInCar < maxNumberOfPeopleInCar){
+            numberOfPeopleInCar++;
+            System.out.println("Someone got in");
+        }
+        else {
+            System.out.println("The car is full" + numberOfPeopleInCar + "=" + maxNumberOfPeopleInCar);
+        }
+        
+
     }
 
     public void getOut(){
-        numberOfPeopleInCar--;
+        //numberOfPeopleInCar--;
+        if (numberOfPeopleInCar > 0){
+            numberOfPeopleInCar--;
+        }
     }
 
     public double howManyMilesTillOutOfGas(){
@@ -68,21 +85,8 @@ public class Car {
 
     public static void main(String[] args) {
 
-        
-        Car birthdayPresent = new Car(500, 5000.545, true);
+        Car tommyCar = new Car();    
 
-        System.out.println("Birthday car v1");
-        birthdayPresent.printVariables();
-        birthdayPresent.getIn();
-        birthdayPresent.getIn();
-        birthdayPresent.getIn();
-        System.out.println("Miles left:" + birthdayPresent.howManyMilesTillOutOfGas());
-        System.out.println("Max Miles:" + birthdayPresent.maxMilesPerFillUp());
-        System.out.println("Birthday car v2");
-        birthdayPresent.printVariables();
-        birthdayPresent.getOut();
-        System.out.println("Birthday car v3");
-        birthdayPresent.printVariables();
 
         //System.out.println("Christmas car");
         //Car christmasPresent = new Car(550, 2000, false);
