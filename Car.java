@@ -54,7 +54,7 @@ public class Car {
             System.out.println("Someone got in");
         }
         else {
-            System.out.println("The car is full" + numberOfPeopleInCar + "=" + maxNumberOfPeopleInCar);
+            System.out.println("The car is full " + numberOfPeopleInCar + "=" + maxNumberOfPeopleInCar);
         }
         
 
@@ -66,7 +66,7 @@ public class Car {
             numberOfPeopleInCar--;
         }
         else{
-            System.out.println("No one is in the car" + numberOfPeopleInCar);
+            System.out.println("No one is in the car " + numberOfPeopleInCar);
         }
     }
 
@@ -83,7 +83,7 @@ public class Car {
         isTheCarOn  = true;
         }
         else{
-            System.out.println("The car is already on" + isTheCarOn);
+            System.out.println("The car is already on " + isTheCarOn);
         }
     }
 
@@ -92,7 +92,17 @@ public class Car {
     public static void main(String[] args) {
 
         Car tommyCar = new Car();    
-
+        tommyCar.getOut();
+        tommyCar.getOut();
+        tommyCar.getIn();
+        tommyCar.getIn();
+        tommyCar.getIn();
+        tommyCar.getIn();
+        tommyCar.getIn();
+        tommyCar.getIn();
+        tommyCar.getIn();
+        tommyCar.turnTheCarOn();
+        tommyCar.turnTheCarOn();
 
         //System.out.println("Christmas car");
         //Car christmasPresent = new Car(550, 2000, false);
