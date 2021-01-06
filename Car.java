@@ -18,7 +18,7 @@ public class Car {
     int maxNumberOfPeopleInCar = 6;
 
     public Car() {
-        
+
     }
 
     public Car(int customMaxSpeed, double customWeight, boolean customIsTheCarOn){
@@ -65,6 +65,9 @@ public class Car {
         if (numberOfPeopleInCar > 0){
             numberOfPeopleInCar--;
         }
+        else{
+            System.out.println("No one is in the car" + numberOfPeopleInCar);
+        }
     }
 
     public double howManyMilesTillOutOfGas(){
@@ -78,6 +81,9 @@ public class Car {
     public void turnTheCarOn(){
         if (isTheCarOn == false){
         isTheCarOn  = true;
+        }
+        else{
+            System.out.println("The car is already on" + isTheCarOn);
         }
     }
 
