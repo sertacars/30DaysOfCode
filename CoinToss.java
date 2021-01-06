@@ -2,10 +2,15 @@ import java.util.Random;
 
 public class CoinToss {
 
-    public int tossACoin() {
+    public String tossACoin() {
         Random rand = new Random();
         int toss = Math.abs(rand.nextInt()) % 2;
-        return toss;
+        if (toss ==0){
+            return "HEADS";
+        }
+        else{
+            return "TAILS";
+        }
     }
 
     public static void main(String[] args) {
