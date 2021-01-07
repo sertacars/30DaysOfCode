@@ -11,6 +11,7 @@ public class GuessTheNumber {
 
     public GuessTheNumber(){
         Random rand = new Random();
+        max = 100;
         theNumber = Math.abs(rand.nextInt()) % (max+1);
     }
 
@@ -45,14 +46,9 @@ public class GuessTheNumber {
     }
     public static void main(String[] args) {
 
-        howBigIsMyNumber(0);
-        howBigIsMyNumber(10);
-        howBigIsMyNumber(100);
-        howBigIsMyNumber(20);
-        howBigIsMyNumber(11);
-        howBigIsMyNumber(5);
-        howBigIsMyNumber(750);
-        howBigIsMyNumber(-2);
+        GuessTheNumber guessGame = new GuessTheNumber();
+        System.out.println("Welcome! Try and guess the number " + "Its between 0 and " + guessGame.max);
+        guessGame.play();
         
     }
 }
