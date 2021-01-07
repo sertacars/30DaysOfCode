@@ -63,9 +63,8 @@ public class Car {
         condition = 'C';
     }
 
-    public void upgradeMinSpeed() {
-        minSpeed = maxSpeed;
-        maxSpeed = maxSpeed + 1;
+    public void upgradeMaxSpeed() {
+        setMaxSpeed(getMaxSpeed() + 10);
     }
 
     public void getIn(){
