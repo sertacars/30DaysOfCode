@@ -32,6 +32,10 @@ public class Car {
     public int getMaxSpeed() {
         return this.maxSpeed;
     }
+
+    public void setMaxSpeed(int newMaxSpeed){
+        this.maxSpeed = newMaxSpeed;
+    }
     
     public int getMinSpeed() {
         return this.minSpeed;
