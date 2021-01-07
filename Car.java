@@ -27,6 +27,24 @@ public class Car {
         isTheCarOn = customIsTheCarOn;
     }
 
+    // getters and setters
+
+    public int getMaxSpeed() {
+        return this.maxSpeed;
+    }
+    
+    public int getMinSpeed() {
+        return this.minSpeed;
+    }
+    
+    public double getWeight() {
+        return this.weight;
+    }
+
+    public boolean getIsTheCarOn() {
+        return this.isTheCarOn;
+    }
+
     public void printVariables(){
         System.out.println("The max speed is: " + maxSpeed);
         System.out.println("The min speed is: " + minSpeed);
