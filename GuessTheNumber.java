@@ -15,6 +15,16 @@ public class GuessTheNumber {
     }
 
     public void play() {
+        int move = scanner.nextInt();
+        if (move > theNumber){
+            System.out.println("Your number is too big");
+        }
+        else if (move < theNumber){
+            System.out.println("Your number is too small");
+        }
+        else{
+            System.out.println("You got it!!!!!!");
+        }
 
     }
 
