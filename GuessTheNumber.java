@@ -1,4 +1,23 @@
+import java.util.Random;
+import java.util.Scanner;
+
 public class GuessTheNumber {
+
+
+    int theNumber;
+    int max;
+
+    Scanner scanner = new Scanner(System.in);
+
+    public GuessTheNumber(){
+        Random rand = new Random();
+        theNumber = Math.abs(rand.nextInt()) % (max+1);
+    }
+
+    public void play() {
+
+    }
+
 
     public static void howBigIsMyNumber(int x) {
         if (x>=0 && x<=10){
