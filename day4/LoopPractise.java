@@ -18,9 +18,15 @@ public class LoopPractise {
         }while (x<10);
     }
 
+    public static void practiseForLoop(){
+        for (int x=0 ; x<20; x++){
+            System.out.println("The value of x is: " + x);
+        }
+    }
 
     public static void main(String[] args) {
         //practiseWhileLoop();
-        practiceDoWhileLoop();
+        //practiceDoWhileLoop();
+        practiseForLoop();
     }
 }
