@@ -10,8 +10,17 @@ public class LoopPractise {
         }
     }
 
+    public static void practiceDoWhileLoop(){
+        int x = 0;
+        do {
+            System.out.println("The value of x is :" + x);
+            x++;
+        }while (x<10);
+    }
+
 
     public static void main(String[] args) {
-        practiseWhileLoop();
+        //practiseWhileLoop();
+        practiceDoWhileLoop();
     }
 }
