@@ -21,8 +21,10 @@ public class LoopPractise {
     public static void practiseForLoop(){
         for (int x=0 ; x<20; x++){
             System.out.println("The value of x is: " + x);
+            if (x == 10){
+                break;
+            }
         }
-        System.out.println("This is the end!");
     }
 
     public static void main(String[] args) {
