@@ -22,6 +22,7 @@ public class LoopPractise {
         for (int x=0 ; x<20; x++){
             System.out.println("The value of x is: " + x);
         }
+        System.out.println("This is the end!");
     }
 
     public static void main(String[] args) {
