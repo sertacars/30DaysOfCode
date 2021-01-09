@@ -85,7 +85,14 @@ public class MadLibs {
     }
     
     public void setRandNums() {
-
+        int num = Math.abs(rand.nextInt()) % 100; // get a random number
+        int index = 0;                            // set index to 0
+        int[] numberHolder = new int[3];          // create an array
+        while (index < numberHolder.length){      // while index (0) less than numberHolders length (3)
+            numberHolder[index] = num + index;    // access to numberHolder's first value (0) and give it sum of num and index, so if num is 10 => numberHolder will have 10,11,12
+            index++;
+        }
+        randomNums = "not " + numberHolder[0] + " , not " + numberHolder[1] + ", but " + numberHolder[2]; // not 10, not 11, but 12
     }
 
     public void printInstructions(){
