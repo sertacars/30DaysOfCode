@@ -158,10 +158,14 @@ public class MadLibs {
         enterNoun2();
         enterAdverb();
         enterNoun3();
+        setRandNums();
+        putTogetherTheStory();
+        System.out.println(getStory());
     }
 
     public static void main(String[] args) {
         MadLibs game = new MadLibs();
         game.printInstructions();
+        game.play();
     }
 }
