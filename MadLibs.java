@@ -88,7 +88,14 @@ public class MadLibs {
 
     }
 
+    public void printInstructions(){
+        System.out.println("Welcome to Mad Libs game. If you type " 
+        + "words, we will give you a story. Start by typing a name.");
+    }
+
+
     public static void main(String[] args) {
-        
+        MadLibs game = new MadLibs();
+        game.printInstructions();
     }
 }
