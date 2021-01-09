@@ -131,6 +131,16 @@ public class MadLibs {
         setStory(story);
     }
 
+    public void play(){
+        enterName();
+        enterNoun1();
+        enterAdjective1();
+        enterAdjective2();
+        enterNoun2();
+        enterAdverb();
+        enterNoun3();
+    }
+
     public static void main(String[] args) {
         MadLibs game = new MadLibs();
         game.printInstructions();
