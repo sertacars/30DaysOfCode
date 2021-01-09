@@ -90,7 +90,7 @@ public class MadLibs {
 
     public void printInstructions(){
         System.out.println("Welcome to Mad Libs game. If you type " 
-        + "words, we will give you a story. Start by typing a name.");
+        + "words, we will give you a story. Start by typing a name: ");
     }
 
     public void enterName(){
@@ -98,26 +98,32 @@ public class MadLibs {
     }
     
     public void enterNoun1() {
+        System.out.println("Give me a noun: ");
         setNoun1(scanner.nextLine());
     }
     
     public void enterNoun2() {
+        System.out.println("Give me another noun: ");
         setNoun2(scanner.nextLine());
     }
     
     public void enterNoun3() {
+        System.out.println("Give me the last noun: ");
         setNoun3(scanner.nextLine());
     }
 
     public void enterAdjective1() {
+        System.out.println("I need an adjective: ");
         setAdjective1(scanner.nextLine());
     }
     
     public void enterAdjective2() {
+        System.out.println("I need another adjective: ");
         setAdjective2(scanner.nextLine());
     }
     
     public void enterAdverb() {
+        System.out.println("I want an adverb: ");
         setAdverb(scanner.nextLine());
     }
 
