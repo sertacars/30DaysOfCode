@@ -93,6 +93,34 @@ public class MadLibs {
         + "words, we will give you a story. Start by typing a name.");
     }
 
+    public void enterName(){
+        setName(scanner.nextLine());
+    }
+    
+    public void enterNoun1() {
+        setNoun1(scanner.nextLine());
+    }
+    
+    public void enterNoun2() {
+        setNoun2(scanner.nextLine());
+    }
+    
+    public void enterNoun3() {
+        setNoun3(scanner.nextLine());
+    }
+
+    public void enterAdjective1() {
+        setAdjective1(scanner.nextLine());
+    }
+    
+    public void enterAdjective2() {
+        setAdjective2(scanner.nextLine());
+    }
+    
+    public void enterAdverb() {
+        setAdverb(scanner.nextLine());
+    }
+
     public void putTogetherTheStory(){
         String story = "Sertac and his best friend " + getName() + " went to a ball today! "
         + " They saw a " + getNoun1() + " in a show at the UK "
@@ -100,6 +128,7 @@ public class MadLibs {
         + " ran " + getAdverb() + " to meet Paris in her " + getNoun2() + " "
         + " and then that night I gazed at the " + getRandomNums() + " " + 
         getAdjective2() + " fireworks shooting from the " + getNoun3() + ".";
+        setStory(story);
     }
 
     public static void main(String[] args) {
