@@ -135,12 +135,18 @@ public class MadLibs {
     }
 
     public void putTogetherTheStory(){
-        String story = "Sertac and his best friend " + getName() + " went to a ball today! "
+        String story;
+        int num = Math.abs(rand.nextInt()) % 2;
+        if (num==0){
+            story = "Sertac and his best friend " + getName() + " went to a ball today! "
         + " They saw a " + getNoun1() + " in a show at the UK "
         + " and ate a" + getAdjective1() + " feast for dinner. The next day I "
         + " ran " + getAdverb() + " to meet Paris in her " + getNoun2() + " "
         + " and then that night I gazed at the " + getRandomNums() + " " + 
         getAdjective2() + " fireworks shooting from the " + getNoun3() + ".";
+        } else {
+            story = "story - 2";
+        }
         setStory(story);
     }
 
