@@ -1,6 +1,20 @@
 import java.util.Arrays;
 
 public class ArrayPractice {
+
+    public static void printArray(int[] array){
+
+        System.out.print("[");
+        for (int i=0; i<array.length; i++){
+            int item = array[i];
+            System.out.print(item);
+            if (i<array.length - 1){
+                System.out.print(", ");
+            }
+        }
+        System.out.println("]");
+    }
+
     public static void main(String[] args) {
 
         // slots 0  1   2   3   4
@@ -14,10 +28,20 @@ public class ArrayPractice {
 
         String[] shoppingList = {"bananas", "apples", "pears"};
 
+        intArray2[0] = 10;
+        intArray2[1] = 8;
+        intArray2[2] = 5;
+        intArray2[3] = 10;
+
+
         //print out arrays
         System.out.println(Arrays.toString(intArray2));
         System.out.println(Arrays.toString(intArray3));
+        System.out.println();
 
+        //custom print out arrays
+        printArray(intArray2);
+        printArray(intArray3);
     }
     
 }
