@@ -15,6 +15,19 @@ public class ArrayPractice {
         System.out.println("]");
     }
 
+    public static void printArray(String[] array) {
+
+        System.out.print("[");
+        for (int i = 0; i < array.length; i++) {
+            String item = array[i];
+            System.out.print(item);
+            if (i < array.length - 1) {
+                System.out.print(", ");
+            }
+        }
+        System.out.println("]");
+    }
+
     public static void main(String[] args) {
 
         // slots 0  1   2   3   4
@@ -50,6 +63,9 @@ public class ArrayPractice {
         //given functions
         Arrays.sort(intArray3);
         printArray(intArray3);
+
+        //print string array
+        printArray(shoppingList);
     }
     
 }
