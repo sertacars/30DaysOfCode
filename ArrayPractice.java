@@ -33,6 +33,8 @@ public class ArrayPractice {
         // slots 0  1   2   3   4
         //      [0, 5,  3,  2 , 1] --> length 5
 
+        // random objects from arrays:
+        // Math.abs(rand.nextInt) % length
 
         //declaring, allocating and initializing arrays
         int[] intArray1;
