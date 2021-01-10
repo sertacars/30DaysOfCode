@@ -5,6 +5,11 @@ public class ArrayPractice {
         //      [0, 5,  3,  2 , 1] --> length 5
 
 
+        int[] intArray1;
+        int[] intArray2 = new int[4];
+        int[] intArray3 = {5, 2, 9, 1, 3};
+
+
     }
     
 }
