@@ -66,6 +66,12 @@ public class ArrayPractice {
 
         //print string array
         printArray(shoppingList);
+
+        //special for loop: foreach
+        for (String s : shoppingList){
+            //System.out.println("hi");
+            System.out.println(s);
+        }
     }
     
 }
