@@ -14,8 +14,11 @@ public class DictionaryPractice {
         englSpanDict.put("Friday", "Viernes");
 
         //retrieve thigns from dict
-
-        
+        System.out.println(englSpanDict.get("Monday"));
+        System.out.println(englSpanDict.get("Tuesday"));
+        System.out.println(englSpanDict.get("Wednesday"));
+        System.out.println(englSpanDict.get("Thursday"));
+        System.out.println(englSpanDict.get("Friday"));
 
     }
 }
