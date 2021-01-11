@@ -20,5 +20,11 @@ public class DictionaryPractice {
         System.out.println(englSpanDict.get("Thursday"));
         System.out.println(englSpanDict.get("Friday"));
 
+        //print out all keys
+        System.out.println(englSpanDict.keySet());
+
+        //print out all values
+        System.out.println(englSpanDict.values());
+
     }
 }
