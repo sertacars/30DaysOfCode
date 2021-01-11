@@ -34,5 +34,16 @@ public class DictionaryPractice {
         System.out.println();
         System.out.println();
 
+        // shopping list
+        Map<String,Boolean> shoppingList = new HashMap<String,Boolean>();
+        //put some stuff in dict
+        shoppingList.put("Ham", true);
+        shoppingList.put("Bread", Boolean.TRUE);
+        shoppingList.put("Oreos", Boolean.TRUE);
+        shoppingList.put("Eggs", Boolean.FALSE);
+        shoppingList.put("Sugar", false);
+        //retrieve items
+        System.out.println(shoppingList.get("Ham"));
+        System.out.println(shoppingList.get("Sugar"));
     }
 }
