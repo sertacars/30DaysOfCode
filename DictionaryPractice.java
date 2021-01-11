@@ -49,6 +49,15 @@ public class DictionaryPractice {
         //key-value pairs print out
         System.out.println(shoppingList.toString());
         System.out.println(shoppingList.isEmpty());
+
+        //Remove things
+        shoppingList.remove("Eggs");
+        System.out.println(shoppingList.toString());
+
+        //replace values for a certain key
+        shoppingList.replace("Bread", Boolean.FALSE);
+        System.out.println(shoppingList.toString());
+
         //clear dict
         shoppingList.clear();
         System.out.println(shoppingList.toString());
