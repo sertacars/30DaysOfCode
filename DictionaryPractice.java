@@ -48,9 +48,11 @@ public class DictionaryPractice {
 
         //key-value pairs print out
         System.out.println(shoppingList.toString());
+        System.out.println(shoppingList.isEmpty());
         //clear dict
         shoppingList.clear();
         System.out.println(shoppingList.toString());
+        System.out.println(shoppingList.isEmpty());
 
     }
 }
