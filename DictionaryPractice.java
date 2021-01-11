@@ -45,5 +45,12 @@ public class DictionaryPractice {
         //retrieve items
         System.out.println(shoppingList.get("Ham"));
         System.out.println(shoppingList.get("Sugar"));
+
+        //key-value pairs print out
+        System.out.println(shoppingList.toString());
+        //clear dict
+        shoppingList.clear();
+        System.out.println(shoppingList.toString());
+
     }
 }
