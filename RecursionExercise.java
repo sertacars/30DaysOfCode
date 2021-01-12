@@ -30,11 +30,23 @@ public class RecursionExercise {
         }
     }
 
+    public static int Exponentiation(int n, int p){
+        // base case
+        if (p <= 0) {
+            return 1;
+        }
+        // recursive base
+        else {
+            return n * Exponentiation(n, p-1);
+        }
+    }
+
 
 
     public static void main(String[] args) {
 
         System.out.println(Summation(3));
         System.out.println(Factorial(4));
+        System.out.println(Exponentiation(5, 3));
     }
 }
