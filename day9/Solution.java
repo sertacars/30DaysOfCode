@@ -1,12 +1,21 @@
 package day9;
 
-import java.io.*;
-import java.util.*;
-
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.Scanner;
 public class Solution {
 
     // Complete the factorial function below.
 
+    static int factorial(int n) {
+        if (n <= 1) {
+            return 1;
+        } else {
+            return n * factorial(n - 1);
+        }
+
+    }
     private static final Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) throws IOException {
