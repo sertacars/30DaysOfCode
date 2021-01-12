@@ -24,6 +24,7 @@ public class RecursionExercise {
 
 
     public static void main(String[] args) {
-        
+
+        System.out.println(Summation(3));
     }
 }
