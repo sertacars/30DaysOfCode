@@ -36,8 +36,8 @@ public class ArrayPractice {
         // random objects from arrays:
         // Math.abs(rand.nextInt) % length
 
-        //declaring, allocating and initializing arrays
-        int[] intArray1;
+        // declaring, allocating and initializing arrays
+        // int[] intArray1;
         int[] intArray2 = new int[4];
         printArray(intArray2);
         int[] intArray3 = {5, 2, 9, 1, 3};
