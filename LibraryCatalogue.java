@@ -57,7 +57,34 @@ public class LibraryCatalogue {
         currentDay = day;
     }
 
+    //instance methods
 
+    public void checkOutBook(String title){
+        Book book = getBook(title);
+        if (book.getIsCheckedOut()){
+            sorryBookAlreadyCheckedOut(book);
+        }else {
+            book.setIsCheckedOut(true, currentDay);
+            System.out.println("You just checked out " + title + ". It is due on day " + 
+            (getCurrentDay() + getLengthOfCheckoutPeriod()));
+        }
+    }
+
+    public void returnBook(String title){
+        Book book = getBook(title);
+        int daysLate = currentDay - (book.getDayCheckedOut() + getLengthOfCheckoutPeriod());
+        if (daysLate > 0){
+            System.out.println("You owe the library $" + (getInitialLateFee() + daysLate + getFeePerLateDay()) + " because yoour book is " + daysLate + " days overdue.");
+        }else {
+            System.out.println("Book returned. Thank you.");
+        }
+        book.setIsCheckedOut(false, -1);
+    }
+
+    public void sorryBookAlreadyCheckedOut (Book book){
+        System.out.println("Sorry. " + book.getTitle() + " is already checked out. " + "It should be back on day " + (book.getDayCheckedOut() + getLengthOfCheckoutPeriod()) + ".");
+        
+    }
 
     public static void main(String[] args) {
         
