@@ -47,7 +47,15 @@ public class LibraryCatalogue {
         return this.feePerLateDay;
     }
 
+    //setters
 
+    public void nextDay(){
+        currentDay++;
+    }
+
+    public void setDay(int day){
+        currentDay = day;
+    }
 
 
 
