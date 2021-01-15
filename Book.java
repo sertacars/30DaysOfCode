@@ -15,7 +15,7 @@ public class Book {
         isCheckedOut = false;
     }
 
-    // getters
+    // getters --> instance methods
     public String getTitle(){
         return this.title;
 
@@ -37,5 +37,14 @@ public class Book {
         return this.dayCheckedOut;
     }
 
+    // setters
+
+    public void setIsCheckedOut(boolean newIsCheckedOut, int currentDayCheckedOut){
+        this.isCheckedOut = newIsCheckedOut;
+        setDayCheckedOut(currentDayCheckedOut);
+    }
+    private void setDayCheckedOut(int day){
+        this.dayCheckedOut = day;
+    }
 
 }
