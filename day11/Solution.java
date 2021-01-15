@@ -1,5 +1,6 @@
 package day11;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Solution {
@@ -19,6 +20,20 @@ public class Solution {
             }
         }
 
+        int hourGlassSum[] = new int[16]; // 16 total hour glass for 6x6 matrix
+
+        int iteration = 0;
+
+        for (int i = 0; i < 4; i++) {
+            for (int j = 0; j < 4; j++) {
+                hourGlassSum[iteration] = arr[i][j] + arr[i][j + 1] + arr[i][j + 2] + 
+                                          arr[i + 1][j + 1] + 
+                                          arr[i + 2][j] + arr[i + 2][j + 1] + arr[i + 2][j + 2];
+                iteration++;
+            }
+        }
+        Arrays.sort(hourGlassSum);
+        System.out.println(hourGlassSum[15]);
         scanner.close();
     }
 }
