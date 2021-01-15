@@ -83,10 +83,20 @@ public class LibraryCatalogue {
 
     public void sorryBookAlreadyCheckedOut (Book book){
         System.out.println("Sorry. " + book.getTitle() + " is already checked out. " + "It should be back on day " + (book.getDayCheckedOut() + getLengthOfCheckoutPeriod()) + ".");
-        
+
     }
 
     public static void main(String[] args) {
-        
+        Map<String,Book> bookCollection = new HashMap<String,Book>();
+        Book harry = new Book("Harry Potter", 689745, 99999999);
+        bookCollection.put("Harry Potter", harry);
+        LibraryCatalogue lib = new LibraryCatalogue(bookCollection);
+        lib.checkOutBook("Harry Potter");
+        lib.nextDay();
+        lib.nextDay();
+        lib.checkOutBook("Harry Potter");
+        lib.setDay(17);
+        lib.returnBook("Harry Potter");
+        lib.checkOutBook("Harry Potter");
     }
 }
