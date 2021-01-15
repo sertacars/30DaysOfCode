@@ -10,6 +10,8 @@ public class LibraryCatalogue {
     double initialLateFee = 0.50;
     double feePerLateDay = 1.00;
 
+    // constructors
+
     public LibraryCatalogue(Map<String,Book> collection){
         this.bookCollection = collection;
     }
@@ -20,6 +22,35 @@ public class LibraryCatalogue {
         this.initialLateFee = initialLateFee;
         this.feePerLateDay = feePerLateDay;
     }
+    //getters
+    public int getCurrentDay(){
+        return this.currentDay;
+    }
+
+    public Map<String,Book> getBookCollection(){
+        return this.bookCollection;
+    }
+
+    public Book getBook(String bookTitle){
+        return getBookCollection().get(bookTitle);
+
+    }
+
+    public int getLengthOfCheckoutPeriod(){
+        return this.lengthOfCheckedOutPeriod;
+    }
+
+    public double getInitialLateFee(){
+        return this.initialLateFee;
+    }
+    public double getFeePerLateDay(){
+        return this.feePerLateDay;
+    }
+
+
+
+
+
     public static void main(String[] args) {
         
     }
