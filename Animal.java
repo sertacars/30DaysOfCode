@@ -1,7 +1,9 @@
 
 public class Animal {
+    public int age;
 
-    public Animal () {
+    public Animal (int age) {
+        this.age=age;
         System.out.println("Animal has been created.");
     }
 
