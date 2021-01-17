@@ -1,6 +1,6 @@
 
 public class Animal {
-    public int age;
+    private int age;
 
     public Animal (int age) {
         this.age=age;
@@ -10,6 +10,11 @@ public class Animal {
     public void eat(){
         System.out.println("An animal is eating.");
     }
+
+    public int getAge(){
+        return age;
+    }
+
 
     public static void main(String[] args) {
         Animal a = new Animal(5);
@@ -22,7 +27,7 @@ public class Animal {
         c.eat();
         d.run();
         c.prance();
-        System.out.println(d.age);
-        System.out.println(c.age);
+        System.out.println(d.getAge());
+        System.out.println(c.getAge());
     }
 }
