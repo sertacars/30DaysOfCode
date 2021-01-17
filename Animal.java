@@ -22,5 +22,7 @@ public class Animal {
         c.eat();
         d.run();
         c.prance();
+        System.out.println(d.age);
+        System.out.println(c.age);
     }
 }
